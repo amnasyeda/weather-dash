@@ -41,3 +41,40 @@
           </div>
         </div>
       </div>
+       <!--Dashboard-->
+       <div class="row" id="dashboard">
+        <!--Search-->
+        <div class="col col-lg-3 py-3 bg-light" id="search-bar">
+          <!--Search bar-->
+          <form class="form-group" id="search-city">
+            <label for="city-name" class="h4">Search for a city:</label>
+            <div class="form-inline">
+              <input type="text" class="form-control w-75" id="city-name">
+              <button type="submit" class="btn btn-primary" id="search"><i class="fas fa-search"></i></button>
+            </div>
+            <p class="text-danger" id="error"></p>
+          </form>
+          <!--Search history-->
+          <div class="card">
+            <div class="card-header h5 text-center">
+             Search history
+            </div>
+            <ul class="list-group list-group-flush" id="search-history">
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-9 py-3" id="city-info" data-city="">
+          <div class="w-100 h-100 d-flex" id="start-text">
+            <h2 class="m-auto text-center font-weight-normal">Enter a city name to view<br>weather information.</h2>
+          </div>
+        </div>
+      </div>  
+    </main>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    </body>
+</html>
