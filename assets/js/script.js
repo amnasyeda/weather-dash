@@ -120,4 +120,31 @@ function getWeather(desiredCity) {
         }
     })
 
-  
+});
+getFiveDayForecast();
+
+function getFiveDayForecast() {
+    cardRow.empty();
+    let queryUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${desiredCity}&APPID=${apiKey}&units=imperial`;
+    $.ajax({
+        url: queryUrl,
+        method: "GET"
+    })
+    .then(function(fiveDayReponse) {
+        for (let i = 0; i != fiveDayReponse.list.length; i+=8 ) {
+            let cityObj = {
+                date: fiveDayReponse.list[i].dt_txt,
+                icon: fiveDayReponse.list[i].weather[0].icon,
+                temp: fiveDayReponse.list[i].main.temp,
+                humidity: fiveDayReponse.list[i].main.humidity
+            }
+            let dateStr = cityObj.date;
+            let trimmedDate = dateStr.substring(0, 10); 
+            let weatherIco = `https:///openweathermap.org/img/w/${cityObj.icon}.png`;
+            createForecastCard(trimmedDate, weatherIco, cityObj.temp, cityObj.humidity);
+        }
+    })
+}   
+}
+
+function createForecastCard(date, icon, temp, humidity) {
