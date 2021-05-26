@@ -121,6 +121,8 @@ function getWeather(desiredCity) {
     })
 
 });
+
+// Display 5 day forcast
 getFiveDayForecast();
 
 function getFiveDayForecast() {
@@ -148,3 +150,18 @@ function getFiveDayForecast() {
 }
 
 function createForecastCard(date, icon, temp, humidity) {
+
+ // HTML for additional weather info
+ let fiveDayCardEl = $("<div>").attr("class", "five-day-card");
+ let cardDate = $("<h3>").attr("class", "card-text");
+ let cardIcon = $("<img>").attr("class", "weatherIcon");
+ let cardTemp = $("<p>").attr("class", "card-text");
+ let cardHumidity = $("<p>").attr("class", "card-text");
+
+ cardRow.append(fiveDayCardEl);
+ cardDate.text(date);
+ cardIcon.attr("src", icon);
+ cardTemp.text(`Temp: ${temp} °F`);
+ cardHumidity.text(`Humidity: ${humidity}%`);
+ fiveDayCardEl.append(cardDate, cardIcon, cardTemp, cardHumidity);
+}
