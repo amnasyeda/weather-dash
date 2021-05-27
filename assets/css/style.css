@@ -171,19 +171,11 @@ li:last-child {
     margin-right: 5px;
 }
 
-.navbar-brand {
-    font-size: 36px;
-}
-
-.search-header {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.city-name {
-    font-size: 30px;
-}
-
-.forecast-date {
-    font-size: 18px;
+@media (max-width:550px){
+    #searchPanel{
+        width:230px;
+    }
+    #mainContent{
+        margin-left:230px;
+    }
 }
