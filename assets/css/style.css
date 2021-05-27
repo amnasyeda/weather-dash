@@ -170,3 +170,11 @@ li:last-child {
 .row * {
     margin-right: 5px;
 }
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
