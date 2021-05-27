@@ -171,10 +171,3 @@ li:last-child {
     margin-right: 5px;
 }
 
-.hide {
-    display: none;
-}
-
-.show {
-    display: block;
-}
