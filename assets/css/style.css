@@ -1,8 +1,8 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
     font-size: 16px;
     margin: 0;    
-    color:black;
+    color: #777777;
     height: 100vh;    
 }
 .row{
@@ -10,8 +10,11 @@ body{
     
 }
 #header{
-    padding:15px;
-    color: white; 
+    background-image: linear-gradient(rgb(103, 111, 212), rgb(15, 8, 99));
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
     position:fixed;
     top:0;
     width:100%;  
@@ -34,7 +37,7 @@ h1,h2,h3,h4{
     padding: 10px 10px 0 10px;
     width: 320px;
     margin-bottom:0;
-    background-color: whitesmoke;      
+    background-color: rgb(242, 242, 242);      
     height: 100%;   
     position: fixed;
     z-index: 1;    
@@ -62,13 +65,13 @@ input{
     border-bottom-right-radius:4px;
 }
 .btn{
-    color: whitesmoke; 
+    color: #777777; 
 }
 .btnCitySearch{
     width:100%;
     display:block;
     font-size: 1.1em;
-    border:1px solid white;
+    border:1px solid #777777;
     border-radius:0;
     text-align:left;
     background-color: white;
@@ -79,18 +82,18 @@ input{
     border: 1px solid;
 }
 #searches{
-    /*overflow-y: scroll;*/
+
 }
 .searchBtn{
     margin-left: 5px;
-    background-color: rgb(48, 104, 187);
+    background-color: rgb(50, 99, 173);
     padding: 5px 10px;
     border-radius: 5px;
     color: white;
 }
 .clearBtn{
     margin-left: 5px;
-    background-color: rgb(190, 52, 52);
+    background-color: rgb(189, 63, 63);
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
@@ -104,7 +107,7 @@ input{
 #currentWeather{
     margin:10px 0 10px 10px;
     padding: 20px 0 20px 20px;
-    border: 1px solid black;
+    border: 1px solid #777777;
     border-right: unset;
     border-radius: 5px 0 0 5px;
 }
@@ -131,7 +134,8 @@ input{
 }
 .dayCard{
     padding: 10px;
-    background-color: lightblue;
+    background-color: rgb(47, 82, 94);
+    color: white; 
     margin: 10px;
     border-radius:5px;
     
