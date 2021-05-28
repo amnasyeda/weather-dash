@@ -70,7 +70,13 @@ function getWeather(city){
     let queryURLCurrent = "";
     let queryURLForecast = "";
 
-  
+    if(city.country == null){
+        queryURLCurrent = "https://api.openweathermap.org/data/2.5/weather?q="+city.city+"&units=metric&appid="+APIKey;
+        queryURLForecast = "https://api.openweathermap.org/data/2.5/forecast?q="+city.city+"&units=metric&appid="+APIKey;
+    }else{        
+        queryURLCurrent = "https://api.openweathermap.org/data/2.5/weather?q="+city.city+","+city.country+"&units=metric&appid="+APIKey;
+        queryURLForecast = "https:////api.openweathermap.org/data/2.5/forecast?q="+city.city+","+city.country+"&units=metric&appid="+APIKey;
+    }
     
     performAPIGETCall(queryURLCurrent, buildCurrentWeather);
     performAPIGETCall(queryURLForecast, buildForecastWeather);    
