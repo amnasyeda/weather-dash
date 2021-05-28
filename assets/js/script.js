@@ -103,7 +103,7 @@ function buildCurrentWeather(data){
                             ,$("<p>").text("UV Index: ").append($("<div>").attr("id", "UVIndex"))
         );
 
-        let UVqueryURL = "https://api.openweathermap.org/data/2.5/uvi"+APIKey+"&lat="+data.coord.lat+"&lon="+data.coord.lon;
+        let UVqueryURL = "https://api.openweathermap.org/data/2.5/uvi?appid="+APIKey+"&lat="+data.coord.lat+"&lon="+data.coord.lon;
         
         performAPIGETCall(UVqueryURL,buildUV);
 
