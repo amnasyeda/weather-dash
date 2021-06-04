@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Weather Dashboard</title>
+</head>
+<body> 
+    
+    <!-- Dashboard -->
+    <div class="header" class="container">
+        <h1>Weather Dashboard</h1>
+    </div>
+
+    <!-- Search bar -->
+    <div class="row">            
+    <div class="border" id="currentWeather">
+            <h2>Search For a City:</h2>
+            <div class="userInput">
+                <input id="searchCity" type="text" placeholder="type city" id="searchCity">
+                <button class="searchBtn" title="Search">Search</button>
+                <button class="clear" class="btn clearBtn"></button>
+            </div>
+            <div id="prevsearches"></div>
+        </div>
+  <!-- Main content -->
+  <div id="mainContainer" class="content">
+    <div id="mainSearch"><h3>Search for Current Forecast</h3></div>
+    <div id="dailyforecast"></div>
+</div>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
