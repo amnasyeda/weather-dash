@@ -35,14 +35,7 @@ https://user-images.githubusercontent.com/81194686/120118324-f7e58480-c15f-11eb-
 
 
 
-
-<<<<<<< HEAD
-# References:
-=======
-
-
 ## References:
->>>>>>> c572a1a836c73457725d94c06efedce606e5736a
 - [w3schools](https://www.w3schools.com/jsref/dom_obj_date.asp)
 - [Wikipedia](https://en.wikipedia.org/wiki/Ultraviolet_index#Index_usage)
 - [Font Awesome](https://fontawesome.com/)
