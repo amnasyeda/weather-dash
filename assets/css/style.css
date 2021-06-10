@@ -1,75 +1,69 @@
-* {
+*{
     margin: 0;
+    box-sizing: border-box;
     padding: 0;
 }
 
-.header {
-    background-image: linear-gradient(rgb(103, 111, 212), rgb(47, 33, 201));
+header{
+    background-image: linear-gradient(rgb(90, 97, 199), rgb(19, 10, 138));
     color: white;
-    font-weight: bold;
     text-align: center;
-    background-color: #857086;
-    margin-right: 10px;
+    padding: 5px;
 }
-
-.wrapper {
-    align-items: stretch;
-    
+.hone {
+text-align: center;
 }
-
-.input {
-   width: 80%;
-   display: block;
+input{
+    display: block;
+    width: 100%; 
 }
-
-.search {
-    text-align: center;
-    padding-right: 5px;
-    width: 400px;
-    height: 300px;
-    position: absolute;
-    left: 50%;
-    padding: 0 0 5px 15px;
-}
-
-.mainSearch {
-    display: inline-block;
-    width: 400px;
-    height: 300px;
-    position: absolute;
-    left: 50%;
-}
-
 button {
-    align-items: center;
-    display: block;  
-}
-
-.btn.clearBtn {
-    background: rgb(61, 61, 146);
-    color: white;
-    max-width: max-content;
-    align-items: center;
-    margin-top: 8px; 
-}
-
-.userInput {
-    margin-bottom: 12px;
-    padding-bottom: 10px;
-}
-
-.content {
-    margin: 10px;
-    border: solid rgb(88, 85, 85);
-}
-
-.mainContainer {
-    display: inline-block;
-    height: 500px;
-    width: 1024px;
+    display: block;
     margin: auto;
-    position: relative;
-    top: 60px;
+    width: 100%; 
+    align-items: center;
 }
+.searchBtn{
+    background:dodgerblue ;
+    color:white;
+    align-items: center;
+    margin: auto;
+    width: 100%; 
+    margin-top: 8px;
 
+
+}
+.form{
+    padding-bottom: 10px;
+    border-bottom: gray solid 2px;
+    margin-bottom: 10px;
+}
+.weatherContainer{
+    display: inline-block;
+}
+.mainContainer{
+    border: solid grey 2px;
+    margin: 10px;
+}
+.flex-daily{
+    display: inline-block;
+    margin: auto;
+}
+article {
+    display: inline-block;
+
+}
+.searchList{
+
+}
+.btnDist{
+    margin-top: 5px;
+}
+.divInline{
+    display: inline-block;
+    margin: 5px;
+}
+.gray{
+    background-color:lightgray;
+}
 
